@@ -1,0 +1,39 @@
+site_name: Mix Hawk Music
+site_url: https://mixhawkmusic.com
+site_description: Official website of Mix Hawk - Singer/Songwriter performing authentic country music
+site_author: Mix Hawk
+
+theme:
+  name: material
+  palette:
+    primary: deep orange
+    accent: orange
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+
+nav:
+  - Home: index.md
+  - Biography: bio.md
+  - Photos: photos.md
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+
+extra:
+  social:
+    - icon: fontawesome/brands/facebook
+      link: https://www.facebook.com/mixhawkmusic
+    - icon: fontawesome/brands/instagram  
+      link: https://www.instagram.com/mixhawkmusic
+    - icon: fontawesome/brands/x-twitter
+      link: https://x.com/music_hawk
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/@mixhawkmusic
+    - icon: fontawesome/brands/apple
+      link: https://music.apple.com/us/artist/mix-hawk/1573823988

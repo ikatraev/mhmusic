@@ -1,0 +1,12 @@
+# Assets directory for images and media files
+# 
+# Copy images from site/mixhawkmusic.com/gallery_gen/ to populate this directory
+# Key images needed:
+# - mix-hawk-profile.png (main profile image)
+# - honky-tonk-blue.png (album cover)
+# - growin-love.png (album cover) 
+# - what-a-wonderful-world.png (album cover)
+# - merchandise.jpg (merchandise photo)
+# - mix-hawk-bio.jpg (biography page image)
+#
+# Create subdirectory gallery/ for photo gallery images
