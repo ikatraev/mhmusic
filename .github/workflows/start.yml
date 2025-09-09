@@ -24,7 +24,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Run composite action
-        uses: ./.github/actions/python-build-test
+        uses: /.github/actions/python-build-test
         with:
           environment: ${{ github.event.inputs.environment }}
           python-version: ${{ github.event.inputs.python-version }}
