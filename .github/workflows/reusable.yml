@@ -5,11 +5,7 @@ on:
     inputs:
       environment:
         description: 'The environment to run on'
-        type: choice
-        options:
-          - dev
-          - staging
-          - prod
+        type: string
         required: true
       python-version:
         description: 'Python version to use'
