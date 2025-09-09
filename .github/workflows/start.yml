@@ -1,0 +1,27 @@
+name: Manual Dispatch Workflow
+
+on:
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: 'The environment to run on'
+        type: choice
+        options:
+          - dev
+          - staging
+          - prod
+        required: true
+        default: 'dev'
+      python-version:
+        description: 'Python version to use for the reusable workflow'
+        type: string
+        required: false
+        default: '3.10'
+
+jobs:
+  call-reusable-workflow:
+    name: Call Reusable Python Workflow
+    uses: ./.github/workflows/reusable.yml
+    with:
+      environment: ${{ github.event.inputs.environment }}
+      python-version: ${{ github.event.inputs.python-version }}
