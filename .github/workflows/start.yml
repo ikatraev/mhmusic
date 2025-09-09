@@ -24,7 +24,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Run composite action
-        uses: ikatraev/mhmusic/.github/actions/python-build-test/action.yml
+        uses: ikatraev/mhmusic/.github/actions/python-build-test/action.yml@main
         with:
           environment: ${{ github.event.inputs.environment }}
           python-version: ${{ github.event.inputs.python-version }}
