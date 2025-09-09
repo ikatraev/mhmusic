@@ -1,7 +1,8 @@
 name: ci
 on:
-  push:
-    branches:
+  workflow_dispatch:
+#  push:
+#    branches:
 #      - main
 permissions:
   contents: write
